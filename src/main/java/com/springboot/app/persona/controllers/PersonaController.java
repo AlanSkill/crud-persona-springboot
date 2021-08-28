@@ -22,7 +22,7 @@ public class PersonaController {
 	
 	@Autowired
 	private IPersonaService personaService;
-	//Trae Todos
+	//Trae Todos los registros
 	@GetMapping("/")
 	public List<Persona> listar(){
 		return personaService.findAll();
